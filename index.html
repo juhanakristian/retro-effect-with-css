@@ -19,14 +19,6 @@
         margin: 0;
       }
 
-      :root {
-        --effect-color-1: hsl(242, 54%, 10%);
-        --effect-color-2: hsl(242, 54%, 15%);
-        --effect-color-3: hsl(242, 54%, 20%);
-        --effect-color-4: hsl(242, 54%, 25%);
-        --effect-color-5: hsl(242, 54%, 30%);
-      }
-
       .container {
         font-family: sans-serif;
         text-align: center;
@@ -84,7 +76,7 @@
           hsl(220, 70%, 60%) 80%,
           hsl(212, 92%, 76%) 85%
         );
-        /* The width of the stroke depends on the font used */
+
         -webkit-text-stroke: 2px hsl(200, 65%, 80%);
 
         color: transparent;
@@ -93,20 +85,12 @@
       }
 
       .raise {
-        filter: drop-shadow(1px 1px 0px var(--effect-color-1))
-          drop-shadow(1px 2px 0px var(--effect-color-1))
-          drop-shadow(1px 1px 0px var(--effect-color-2))
-          drop-shadow(1px 2px 0px var(--effect-color-2))
-          drop-shadow(1px 1px 0px var(--effect-color-3))
-          drop-shadow(1px 2px 0px var(--effect-color-3))
-          drop-shadow(1px 1px 0px var(--effect-color-4))
-          drop-shadow(1px 2px 0px var(--effect-color-4))
-          drop-shadow(1px 1px 0px var(--effect-color-5))
-          drop-shadow(1px 2px 0px var(--effect-color-5))
-          drop-shadow(-10px 2px 6px rgba(16, 16, 16, 0.4))
-          drop-shadow(0px 0px 10px rgba(16, 16, 16, 0.2))
-          drop-shadow(0px 3px 35px rgba(16, 16, 16, 0.2))
-          drop-shadow(0px 5px 60px rgba(16, 16, 16, 0.4));
+        filter: drop-shadow(1px 3px 0px hsl(242, 54%, 10%))
+          drop-shadow(1px 3px 0px hsl(242, 54%, 15%))
+          drop-shadow(1px 3px 0px hsl(242, 54%, 20%))
+          drop-shadow(1px 3px 0px hsl(242, 54%, 25%))
+          drop-shadow(1px 3px 0px hsl(242, 54%, 30%))
+          drop-shadow(0px 0px 10px rgba(16, 16, 16, 0.4));
       }
     </style>
   </head>
